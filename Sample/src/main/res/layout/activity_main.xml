@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DDDDDD"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="50dp"
+        android:orientation="horizontal">
+
+        <com.sunzn.brand.library.BrandView
+            android:id="@+id/circle_one"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            app:brand_block_value="#F5F4F0"
+            app:brand_check_value="true"
+            app:brand_frame_color="#FF7200"
+            app:brand_frame_width="4"
+            app:brand_type="circle"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/circle_two"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.sunzn.brand.library.BrandView
+            android:id="@+id/circle_two"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            app:brand_block_value="@drawable/paper"
+            app:brand_frame_color="#FF7200"
+            app:brand_frame_width="4"
+            app:brand_type="circle"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/circle_thr"
+            app:layout_constraintStart_toEndOf="@id/circle_one"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.sunzn.brand.library.BrandView
+            android:id="@+id/circle_thr"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            app:brand_block_value="#3A3231"
+            app:brand_frame_color="#FF7200"
+            app:brand_frame_width="4"
+            app:brand_type="circle"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/circle_fou"
+            app:layout_constraintStart_toEndOf="@id/circle_two"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.sunzn.brand.library.BrandView
+            android:id="@+id/circle_fou"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            app:brand_block_value="#CCE8CF"
+            app:brand_frame_color="#FF7200"
+            app:brand_frame_width="4"
+            app:brand_type="circle"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/circle_fiv"
+            app:layout_constraintStart_toEndOf="@id/circle_thr"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.sunzn.brand.library.BrandView
+            android:id="@+id/circle_fiv"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            app:brand_block_value="#001c29"
+            app:brand_frame_color="#FF7200"
+            app:brand_frame_width="4"
+            app:brand_type="circle"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/circle_fou"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="50dp"
+        android:orientation="horizontal">
+
+        <com.sunzn.brand.library.BrandView
+            android:id="@+id/rectangle_one"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            app:brand_block_value="#F5F4F0"
+            app:brand_check_value="true"
+            app:brand_frame_color="#FF7200"
+            app:brand_frame_width="4"
+            app:brand_round_value="15"
+            app:brand_type="rectangle"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/rectangle_two"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.sunzn.brand.library.BrandView
+            android:id="@+id/rectangle_two"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            app:brand_block_value="@drawable/paper"
+            app:brand_frame_color="#FF7200"
+            app:brand_frame_width="4"
+            app:brand_round_value="15"
+            app:brand_type="rectangle"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/rectangle_thr"
+            app:layout_constraintStart_toEndOf="@id/rectangle_one"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.sunzn.brand.library.BrandView
+            android:id="@+id/rectangle_thr"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            app:brand_block_value="#3A3231"
+            app:brand_frame_color="#FF7200"
+            app:brand_frame_width="4"
+            app:brand_round_value="15"
+            app:brand_type="rectangle"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/rectangle_fou"
+            app:layout_constraintStart_toEndOf="@id/rectangle_two"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.sunzn.brand.library.BrandView
+            android:id="@+id/rectangle_fou"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            app:brand_block_value="#CCE8CF"
+            app:brand_frame_color="#FF7200"
+            app:brand_frame_width="4"
+            app:brand_round_value="15"
+            app:brand_type="rectangle"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/rectangle_fiv"
+            app:layout_constraintStart_toEndOf="@id/rectangle_thr"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.sunzn.brand.library.BrandView
+            android:id="@+id/rectangle_fiv"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            app:brand_block_value="#001c29"
+            app:brand_frame_color="#FF7200"
+            app:brand_frame_width="4"
+            app:brand_round_value="15"
+            app:brand_type="rectangle"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/rectangle_fou"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.appcompat.widget.LinearLayoutCompat>
